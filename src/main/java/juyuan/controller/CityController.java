@@ -17,7 +17,7 @@ public class CityController {
     @Autowired
     private CityService cityService;
     /**
-     * 新增
+     * 新增.
      */
     @PostMapping
     public Result save(@RequestBody City city){
