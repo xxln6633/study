@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="juyuan.mapper.StudentMapper">
+
+    <update id="update" >
+        update student
+        <set>
+            <if test="name != null">name = #{name},</if>
+            <if test="gender != null">gender = #{gender},</if>
+            <if test="age != null">age = #{age},</if>
+            <if test="score != null">score = #{score},</if>
+            <if test="phone != null">phone = #{phone},</if>
+        </set>
+        <where>
+        where student_id =#{studentId}
+        </where>
+    </update>
+
+
+
+</mapper>

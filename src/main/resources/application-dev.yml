@@ -1,0 +1,8 @@
+sky:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: graduate-23f-db-database.dev.juyuansoft.com
+    port: 3306
+    database: sakila
+    username: readonly
+    password: RD12345678
